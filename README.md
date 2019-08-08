@@ -97,7 +97,10 @@ Once the template has been loaded, you should see the following NiFi flow
 ![postimageconfig](https://github.com/BrooksIan/B2Detect/blob/master/images/project/postimageconfig.png)
 
 1. Use your Slack Token in URL value: 
-https://slack.com/api/files.upload?token= YOUR KEY HERE &channels=b2detect&filename=${absolute.path}${filename}&files:write:user&pretty=1
+
+```bash
+https://slack.com/api/files.upload?token= <YOUR KEY HERE> &channels=b2detect&filename=${absolute.path}${filename}&files:write:user&pretty=1
+```
 
 ### Put Slack Processor Configuration
 
