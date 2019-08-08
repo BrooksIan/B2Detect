@@ -80,6 +80,10 @@ Download the project using the git url for [here.](https://github.com/BrooksIan/
 
 ### Upload NiFi Template <a name="Setup4"></a>
 
+Once the template has been loaded, you should see the following NiFi flow
+
+![nififlow](https://github.com/BrooksIan/B2Detect/blob/master/images/project/nififlow.png)
+
 ## NiFi Configuration <a name="NifiConfig"></a>
 
 ### SSL Context Configuration
@@ -89,8 +93,18 @@ Download the project using the git url for [here.](https://github.com/BrooksIan/
 ![nifissl1](https://github.com/BrooksIan/B2Detect/blob/master/images/project/nifisslcontext1.png)
 
 ### Post Image Processor Configuration
+
 ![postimageconfig](https://github.com/BrooksIan/B2Detect/blob/master/images/project/postimageconfig.png)
 
+1. Use your Slack Token in URL value: https://slack.com/api/files.upload?token=<YOUR KEY HERE>&channels=b2detect&filename=${absolute.path}${filename}&files:write:user&pretty=1
+
+### Put Slack Processor Configuration
+
+![putslack](https://github.com/BrooksIan/B2Detect/blob/master/images/project/putslack.png)
+
+1. Update Webhook URL value
+
+![slackwebhook](https://github.com/BrooksIan/B2Detect/blob/master/images/project/slackwebhook.png)
 
 ## Tensorflow Serving <a name="TFServe"></a>
 
