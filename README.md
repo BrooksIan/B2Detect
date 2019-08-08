@@ -158,7 +158,6 @@ import PIL.Image
 from PIL import ImageDraw
 import numpy
 import requests
-from pprint import pprint
 import time
 import json
 import sys
