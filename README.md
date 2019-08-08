@@ -5,7 +5,9 @@
 ## Introduction - Corporate Logo Object Detection <a name="introduction"></a>
 The goal of this project is to build a 
 
-![hwlogodetection](https://github.com/BrooksIan/LogoTL/blob/master/Images/project/HWLogoDect.gif "hwlogodect")
+![result1](https://github.com/BrooksIan/B2Detect/blob/master/Images/project/result1.jpg)
+![result2](https://github.com/BrooksIan/B2Detect/blob/master/Images/project/result2.jpg)
+![result3](https://github.com/BrooksIan/B2Detect/blob/master/Images/project/result3.jpg)
 
 
 **Language**: Python
@@ -33,6 +35,7 @@ The goal of this project is to build a
 
 4. [NiFi Configuration](#NifiConfig)
 5. [Tensorflow Serving](#TFServe)
+6. [Results - Images Posted To Slack](#Result)
 
 ## Links <a name="links"></a>
 **NiFi Links**: <a name="linksNifi"></a>
@@ -92,3 +95,4 @@ docker run -p 8900:8500 -p 8501:8501  --mount type=bind,source=/saved_model,targ
 
 ```
 
+## Result - Images Posted To Slack <a name="Result"></a>
