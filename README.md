@@ -23,9 +23,7 @@ The goal of this project is to build an end-to-end project to detect images that
 2. [Links](#links)
     1. [Apache NiFi](#linksnifi)
     2. [Tensorflow](#linksTF)
-    3. [Ian's Tensorflow Object Detection Tutorial](https://github.com/BrooksIan/LogoTL)
-    4. [Social Searcher](https://www.social-searcher.com/)
-    5. [Slack](https://slack.com/)
+ 	3. [Additional](#linksAdd)
 
 3. [Setup Environment](#Setup)
 	1. [Download Python Libraries](#Setup1)
@@ -47,6 +45,10 @@ The goal of this project is to build an end-to-end project to detect images that
 - [Tensorflow Serving](https://www.tensorflow.org/tfx/guide/serving "link9")
 - [Tensorflow Serving Using Docker](https://www.tensorflow.org/tfx/serving/docker "link10")
 
+**Additional Links**: <a name="linksAdd"></a>
+- [Ian's Tensorflow Object Detection Tutorial](https://github.com/BrooksIan/LogoTL)
+- [Social Searcher](https://www.social-searcher.com/)
+- [Slack](https://slack.com/)
 
 ## Setup Environment - Download Everything! <a name="Setup"></a>
 
