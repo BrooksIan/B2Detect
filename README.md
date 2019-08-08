@@ -82,6 +82,15 @@ Download the project using the git url for [here.](https://github.com/BrooksIan/
 
 ## NiFi Configuration <a name="NifiConfig"></a>
 
+### SSL Context Configuration
+
+![nifissl](https://github.com/BrooksIan/B2Detect/blob/master/images/project/nifissl.png)
+![nifissl0](https://github.com/BrooksIan/B2Detect/blob/master/images/project/nifisslcontext0.png)
+![nifissl1](https://github.com/BrooksIan/B2Detect/blob/master/images/project/nifisslcontext1.png)
+
+### Post Image Processor Configuration
+![postimageconfig](https://github.com/BrooksIan/B2Detect/blob/master/images/project/postimageconfig.png)
+
 
 ## Tensorflow Serving <a name="TFServe"></a>
 
