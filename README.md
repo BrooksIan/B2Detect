@@ -130,7 +130,7 @@ Update Webhook URL value
 
 ![slackwebhook](https://github.com/BrooksIan/B2Detect/blob/master/images/project/slackwebhook.png)
 
-## Tensorflow Serving <a name="TFServe"></a>
+## Tensorflow Serving Using Docker <a name="TFServe"></a>
 
 Run at terminal prompt
 
@@ -143,6 +143,61 @@ docker run -p 8900:8500 -p 8501:8501  --mount type=bind,source=/saved_model,targ
 -e MODEL_NAME=saved_model -t tensorflow/serving &
 
 ```
+
+## Configure Execute Stream Command Processor <a name="modelcall"></a>
+
+![steamc0](https://github.com/BrooksIan/B2Detect/blob/master/images/project/streamcommand0.png)
+
+![steamc1](https://github.com/BrooksIan/B2Detect/blob/master/images/project/streamcommand1.png)
+
+1. Download (or copy) the following python to the path set in the Exectute Stream Command processor, which is used to call the Tensorflow model.
+
+2. Set the URL of the Tensorflow Docker container
+
+```python
+import PIL.Image
+from PIL import ImageDraw
+import numpy
+import requests
+from pprint import pprint
+import time
+import json
+import sys
+
+
+imagePath = str(sys.argv[1])
+#output_name = str(sys.argv[2])
+threshold=0.95 #= str(sys.argv[3])
+timeTheashold = 2.5
+
+image = PIL.Image.open(imagePath)  # Change dog.jpg with your image
+image_np = numpy.array(image)
+draw = ImageDraw.Draw(image)
+
+
+payload = {"instances": [image_np.tolist()]}
+start = time.time()
+res = requests.post("<URL of docker container>:8501/v1/models/saved_model:predict", json=payload)
+#print(f"Took {time.perf_counter()-start:.2f}s")
+processTime = time.time()-start
+
+
+jsonStr= json.dumps(res.json())
+jsonDict = json.loads(jsonStr)
+
+predScore = jsonDict['predictions'][0]['detection_scores'][0]
+#topDetectionBox = jsonDict['predictions'][0]['detection_boxes'][0]
+
+if((predScore >= threshold) and (timeTheashold >= processTime)):
+	response = {"response":"B2Found","confidence": predScore , "duration": processTime }
+
+else:
+	response = {"response":"B2NotFound","confidence":predScore,"duration":processTime}
+
+jsonresponse = json.dumps(response)
+print(jsonresponse)
+```
+
 
 ## Result - B2 Images Posted To Slack Channel<a name="Result"></a>
 ![FinalResult](https://github.com/BrooksIan/B2Detect/blob/master/images/project/slackUpload.png)
