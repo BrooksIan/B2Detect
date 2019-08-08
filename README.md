@@ -149,7 +149,7 @@ docker run -p 8900:8500 -p 8501:8501  --mount type=bind,source=/saved_model,targ
 
 ![steamc1](https://github.com/BrooksIan/B2Detect/blob/master/images/project/streamcommand1.png)
 
-1. Download (or copy) callTFModel.py python script to the path set in the Exectute Stream Command processor, which is used to call the Tensorflow model.
+1. Download (or copy) [callTFModel.py](https://raw.githubusercontent.com/BrooksIan/B2Detect/master/callTFModel.py) python script to the path set in the Exectute Stream Command processor, which is used to call the Tensorflow model.
 
 2. In callTFModel.py, set the URL of the Tensorflow Docker container
 
