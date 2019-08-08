@@ -2,12 +2,10 @@
 ## Data Science
 ### Object Detection on steaming images using Tensorflow and Apache NiFi
 
-## Introduction - Corporate Logo Object Detection <a name="introduction"></a>
-The goal of this project is to build a 
+## Introduction - B2 Stealth Bomber Social Media Photo Detector <a name="introduction"></a>
+The goal of this project is to build an end-to-end project to detect images that contain B2 Stealth Bomber from popular social media sites. 
 
-![result1](https://github.com/BrooksIan/B2Detect/blob/master/images/project/result1.jpg)
 ![result2](https://github.com/BrooksIan/B2Detect/blob/master/images/project/result2.jpg)
-![result3](https://github.com/BrooksIan/B2Detect/blob/master/images/project/result3.jpg)
 
 
 **Language**: Python
@@ -26,6 +24,8 @@ The goal of this project is to build a
     1. [Apache NiFi](#linksnifi)
     2. [Tensorflow](#linksTF)
     3. [Ian's Tensorflow Object Detection Tutorial](https://github.com/BrooksIan/LogoTL)
+    4. [Social Searcher](https://www.social-searcher.com/)
+    5. [Slack](https://slack.com/)
 
 3. [Setup Environment](#Setup)
 	1. [Download Python Libraries](#Setup1)
