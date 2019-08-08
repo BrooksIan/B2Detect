@@ -98,6 +98,6 @@ docker run -p 8900:8500 -p 8501:8501  --mount type=bind,source=/saved_model,targ
 ```
 
 ## Result - Images Posted To Slack <a name="Result"></a>
-![FinalResult](https://github.com/BrooksIan/B2Detect/blob/master/images/project/slackupload.png)
+![FinalResult](https://github.com/BrooksIan/B2Detect/blob/master/images/project/slackUpload.png)
 
 
