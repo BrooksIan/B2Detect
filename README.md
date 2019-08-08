@@ -83,6 +83,8 @@ Download the project using the git url for [here.](https://github.com/BrooksIan/
 
 NiFi flow template is called [B2DetectFlow_BaseTemplate.xml](https://raw.githubusercontent.com/BrooksIan/B2Detect/master/B2DetectFlow_BaseTemplate.xml)
 
+![tempupload](https://github.com/BrooksIan/B2Detect/blob/master/images/project/tempupload.png)
+
 Once the template has been loaded, you should see the following NiFi flow
 
 ![nififlow](https://github.com/BrooksIan/B2Detect/blob/master/images/project/nififlow.png)
