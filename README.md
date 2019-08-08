@@ -86,6 +86,19 @@ Once the template has been loaded, you should see the following NiFi flow
 
 ## NiFi Configuration <a name="NifiConfig"></a>
 
+
+### Set Social Seacher API Token 
+
+![social0](https://github.com/BrooksIan/B2Detect/blob/master/images/project/socialset0.png)
+
+![social1](https://github.com/BrooksIan/B2Detect/blob/master/images/project/socialset1.png)
+
+Set Social Searcher token value
+
+```bash
+http://api.social-searcher.com/v2/search?q=B2+Stealth+Bomber&type=photo&key=<YOUR TOKEN VALUE HERE>
+```
+
 ### SSL Context Configuration
 
 ![nifissl](https://github.com/BrooksIan/B2Detect/blob/master/images/project/nifissl.png)
