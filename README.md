@@ -31,6 +31,9 @@ The goal of this project is to build a
 	3. [Download Project](#Setup3)
 	4. [Upload NiFi Template](#Setup4)
 
+4. [NiFi Configuration](#NifiConfig)
+5. [Tensorflow Serving](#TFServe)
+
 ## Links <a name="links"></a>
 **NiFi Links**: <a name="linksNifi"></a>
 - [Posting Images with Apache NiFi 1.7 and a Custom Processor](https://community.hortonworks.com/articles/223916/posting-images-with-apache-nifi-17-and-a-custom-pr.html "link1")
@@ -72,4 +75,20 @@ Download the project using the git url for [here.](https://github.com/BrooksIan/
 
 ### Upload NiFi Template <a name="Setup4"></a>
 
+## NiFi Configuration <a name="NifiConfig"></a>
+
+
+## Tensorflow Serving <a name="TFServe"></a>
+
+Run at terminal prompt
+
+
+```bash
+docker pull tensorflow/serving
+
+#Adding the Version number on model target path is VERY important! 
+docker run -p 8900:8500 -p 8501:8501  --mount type=bind,source=/saved_model,target=/models/saved_model/1 \
+-e MODEL_NAME=saved_model -t tensorflow/serving &
+
+```
 
