@@ -178,7 +178,6 @@ draw = ImageDraw.Draw(image)
 payload = {"instances": [image_np.tolist()]}
 start = time.time()
 res = requests.post("<URL of docker container>:8501/v1/models/saved_model:predict", json=payload)
-#print(f"Took {time.perf_counter()-start:.2f}s")
 processTime = time.time()-start
 
 
