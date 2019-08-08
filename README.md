@@ -5,9 +5,9 @@
 ## Introduction - Corporate Logo Object Detection <a name="introduction"></a>
 The goal of this project is to build a 
 
-![result1](https://github.com/BrooksIan/B2Detect/blob/master/Images/project/result1.jpg)
-![result2](https://github.com/BrooksIan/B2Detect/blob/master/Images/project/result2.jpg)
-![result3](https://github.com/BrooksIan/B2Detect/blob/master/Images/project/result3.jpg)
+![result1](https://github.com/BrooksIan/B2Detect/blob/master/images/project/result1.jpg)
+![result2](https://github.com/BrooksIan/B2Detect/blob/master/images/project/result2.jpg)
+![result3](https://github.com/BrooksIan/B2Detect/blob/master/images/project/result3.jpg)
 
 
 **Language**: Python
