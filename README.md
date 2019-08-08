@@ -29,7 +29,7 @@ The goal of this project is to build an end-to-end project to detect images that
 	1. [Download Python Libraries](#Setup1)
 	2. [Download NiFi Processor](#Setup2)
 	3. [Download Project](#Setup3)
-	4. [Upload NiFi Template](#Setup4)
+	4. [Upload NiFi Templates](#Setup4)
 
 4. [NiFi Configuration](#NifiConfig)
 5. [Tensorflow Serving](#TFServe)
@@ -81,7 +81,7 @@ Download the project using the git url for [here.](https://github.com/BrooksIan/
 
 ### Upload NiFi Template <a name="Setup4"></a>
 
-NiFi flow template is called B2DetectFlow_BaseTemplate.xml
+NiFi flow template is called [B2DetectFlow_BaseTemplate.xml](https://raw.githubusercontent.com/BrooksIan/B2Detect/master/B2DetectFlow_BaseTemplate.xml)
 
 Once the template has been loaded, you should see the following NiFi flow
 
@@ -90,7 +90,7 @@ Once the template has been loaded, you should see the following NiFi flow
 ## NiFi Configuration <a name="NifiConfig"></a>
 
 
-### Set Social Seacher API Token 
+### Set Social Seacher API Token in InvokeHTTP processor 
 
 ![social0](https://github.com/BrooksIan/B2Detect/blob/master/images/project/socialset0.png)
 
@@ -102,13 +102,15 @@ Set Social Searcher token value
 http://api.social-searcher.com/v2/search?q=B2+Stealth+Bomber&type=photo&key=<YOUR TOKEN VALUE HERE>
 ```
 
-### SSL Context Configuration
+### SSL Context Configuration in InvokeHTTP processor
 
 ![nifissl](https://github.com/BrooksIan/B2Detect/blob/master/images/project/nifissl.png)
 ![nifissl0](https://github.com/BrooksIan/B2Detect/blob/master/images/project/nifisslcontext0.png)
 ![nifissl1](https://github.com/BrooksIan/B2Detect/blob/master/images/project/nifisslcontext1.png)
 
 ### Post Image Processor Configuration
+
+![postimageprocessor](https://github.com/BrooksIan/B2Detect/blob/master/images/project/postimageprocessor.png)
 
 ![postimageconfig](https://github.com/BrooksIan/B2Detect/blob/master/images/project/postimageconfig.png)
 
