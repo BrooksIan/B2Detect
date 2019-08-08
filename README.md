@@ -170,7 +170,7 @@ imagePath = str(sys.argv[1])
 threshold=0.95 #= str(sys.argv[3])
 timeTheashold = 2.5
 
-image = PIL.Image.open(imagePath)  # Change dog.jpg with your image
+image = PIL.Image.open(imagePath)  
 image_np = numpy.array(image)
 draw = ImageDraw.Draw(image)
 
@@ -185,7 +185,6 @@ jsonStr= json.dumps(res.json())
 jsonDict = json.loads(jsonStr)
 
 predScore = jsonDict['predictions'][0]['detection_scores'][0]
-#topDetectionBox = jsonDict['predictions'][0]['detection_boxes'][0]
 
 if((predScore >= threshold) and (timeTheashold >= processTime)):
 	response = {"response":"B2Found","confidence": predScore , "duration": processTime }
