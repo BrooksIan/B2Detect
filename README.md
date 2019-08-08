@@ -196,7 +196,7 @@ print(jsonresponse)
 ```
 
 
-## Result - B2 Images Posted To Slack Channel<a name="Result"></a>
+## Results - Images Are Posted To Slack Channel<a name="Result"></a>
 ![FinalResult](https://github.com/BrooksIan/B2Detect/blob/master/images/project/slackUpload.png)
 
 
