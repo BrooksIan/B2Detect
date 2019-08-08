@@ -162,22 +162,18 @@ import time
 import json
 import sys
 
-
 imagePath = str(sys.argv[1])
-#output_name = str(sys.argv[2])
-threshold=0.95 #= str(sys.argv[3])
+threshold=0.95 
 timeTheashold = 2.5
 
 image = PIL.Image.open(imagePath)  
 image_np = numpy.array(image)
 draw = ImageDraw.Draw(image)
 
-
 payload = {"instances": [image_np.tolist()]}
 start = time.time()
 res = requests.post("<URL OF DOCKER CONTAINER>:8501/v1/models/saved_model:predict", json=payload)
 processTime = time.time()-start
-
 
 jsonStr= json.dumps(res.json())
 jsonDict = json.loads(jsonStr)
@@ -193,7 +189,6 @@ else:
 jsonresponse = json.dumps(response)
 print(jsonresponse)
 ```
-
 
 ## Results - Images Are Posted To Slack Channel<a name="Result"></a>
 ![FinalResult](https://github.com/BrooksIan/B2Detect/blob/master/images/project/slackUpload.png)
