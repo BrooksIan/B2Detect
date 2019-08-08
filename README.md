@@ -40,6 +40,7 @@ The goal of this project is to build an end-to-end project to detect images that
 - [Posting Images with Apache NiFi 1.7 and a Custom Processor](https://community.hortonworks.com/articles/223916/posting-images-with-apache-nifi-17-and-a-custom-pr.html "link1")
 - [Post Images To Slack Custom Processor](https://github.com/tspannhw/nifi-postimage-processor "link2")
 - [Great Read On Posting Images to Slack from Apache NiFi Using Custom Processor](https://www.datainmotion.dev/2019/03/posting-images-to-slack-from-apache.html "link3")
+- [Uploading NiFi Template](https://www.youtube.com/watch?v=nha90lYQZ-0)
 
 **TensorFlow Links**: <a name="linksTF"></a>
 - [Tensorflow Serving](https://www.tensorflow.org/tfx/guide/serving "link9")
@@ -80,6 +81,8 @@ Download the project using the git url for [here.](https://github.com/BrooksIan/
 
 ### Upload NiFi Template <a name="Setup4"></a>
 
+NiFi flow template is called B2DetectFlow_BaseTemplate.xml
+
 Once the template has been loaded, you should see the following NiFi flow
 
 ![nififlow](https://github.com/BrooksIan/B2Detect/blob/master/images/project/nififlow.png)
@@ -109,7 +112,7 @@ http://api.social-searcher.com/v2/search?q=B2+Stealth+Bomber&type=photo&key=<YOU
 
 ![postimageconfig](https://github.com/BrooksIan/B2Detect/blob/master/images/project/postimageconfig.png)
 
-1. Use your Slack Token in URL value: 
+Update Slack API Token in URL value: 
 
 ```bash
 https://slack.com/api/files.upload?token= <YOUR KEY HERE> &channels=b2detect&filename=${absolute.path}${filename}&files:write:user&pretty=1
@@ -119,7 +122,7 @@ https://slack.com/api/files.upload?token= <YOUR KEY HERE> &channels=b2detect&fil
 
 ![putslack](https://github.com/BrooksIan/B2Detect/blob/master/images/project/putslack.png)
 
-1. Update Webhook URL value
+Update Webhook URL value
 
 ![slackwebhook](https://github.com/BrooksIan/B2Detect/blob/master/images/project/slackwebhook.png)
 
