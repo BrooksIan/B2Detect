@@ -132,7 +132,7 @@ Update Webhook URL value
 
 ## Tensorflow Serving Using Docker <a name="TFServe"></a>
 
-Run at terminal prompt.  Note the path need to point to the location of saved_model directory in this github repo.
+Run at terminal prompt.  Note the path need to point to the location of [saved_model directory](https://github.com/BrooksIan/B2Detect/tree/master/saved_model) in this github repo.
 
 ```bash
 docker pull tensorflow/serving
