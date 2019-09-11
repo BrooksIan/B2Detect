@@ -11,7 +11,7 @@ imagePath = str(sys.argv[1])
 threshold=0.95
 timeTheashold = 2.5
 
-image = PIL.Image.open(imagePath
+image = PIL.Image.open(imagePath)
 image_np = numpy.array(image)
 draw = ImageDraw.Draw(image)
 
