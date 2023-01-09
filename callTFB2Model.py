@@ -18,7 +18,7 @@ draw = ImageDraw.Draw(image)
 
 payload = {"instances": [image_np.tolist()]}
 start = time.time()
-res = requests.post("<Model_Server_IP_Address>:8501/v1/models/saved_model:predict", json=payload)
+res = requests.post("http://0.0.0.0:8501/v1/models/saved_model:predict", json=payload)
 processTime = time.time()-start
 
 jsonStr= json.dumps(res.json())
