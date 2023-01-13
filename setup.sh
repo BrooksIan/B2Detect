@@ -3,15 +3,15 @@
 yum install conda
 
 #Active Python Environment
-conda install -n modelCall pip3
+conda create -n modelCall python=3.8
 conda activate modelCall
 
 #Import Python Libriaes using pip
-pip3 install requests
-pip3 install pillow
-pip3 install numpy
-pip3 install image
-pip3 install Pillow-PIL
+conda install requests
+conda install pillow
+conda install numpy
+#conda install image
+#conda install Pillow-PIL
 
 conda list
 
