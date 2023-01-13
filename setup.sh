@@ -13,6 +13,8 @@ pip3 install numpy
 pip3 install image
 pip3 install Pillow-PIL
 
+conda list
+
 conda deactivate
 
 #Download Post Image Processor nar  - Thank You Tim Spann! 
