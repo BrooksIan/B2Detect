@@ -10,8 +10,8 @@ conda activate modelCall
 conda install requests
 conda install pillow
 conda install numpy
-#conda install image
-#conda install Pillow-PIL
+pip3 install image
+pip3 install Pillow-PIL
 
 conda list
 
