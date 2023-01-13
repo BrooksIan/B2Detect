@@ -1,12 +1,19 @@
 #!/bin/bash
 
-#Import Python Libriaes using pip
-pip install requests
-pip install pillow
-pip install numpy
-pip install image
-pip install Pillow-PIL
+yum install conda
 
+#Active Python Environment
+conda install -n modelCall pip3
+conda activate modelCall
+
+#Import Python Libriaes using pip
+pip3 install requests
+pip3 install pillow
+pip3 install numpy
+pip3 install image
+pip3 install Pillow-PIL
+
+conda deactivate
 
 #Download Post Image Processor nar  - Thank You Tim Spann! 
-wget https://github.com/tspannhw/nifi-postimage-processor/releases/download/1.0/nifi-postimage-nar-1.0.nar -O /usr/hdf/current/nifi/lib/nifi-postimage-nar-1.0.nar
+#wget https://github.com/tspannhw/nifi-postimage-processor/releases/download/1.0/nifi-postimage-nar-1.0.nar -O /usr/hdf/current/nifi/lib/nifi-postimage-nar-1.0.nar
