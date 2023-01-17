@@ -13,6 +13,9 @@ conda install numpy
 pip3 install image
 pip3 install Pillow-PIL
 
+pip3 install fastapi
+pip3 install "uvicorn[standard]"
+
 conda list
 
 conda deactivate

@@ -1,0 +1,13 @@
+version: "3.2"
+services:
+  TFServing:
+    image: tensorflow/serving:latest
+    ports:
+         - "8900:8500"
+         - "8501:8501"
+    volumes:
+     - type: "bind"
+       source: "/Users/ibrooks/Documents/GitHub/B2Detect/saved_model"
+       target: "/models/saved_model/1"
+    environment:
+     - MODEL_NAME=saved_model
