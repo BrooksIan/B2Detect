@@ -11,10 +11,7 @@ def read_root():
     return {"Hello": "World"}
 
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}
-
+# /detectB2obj/${postid}?q=${imageURL}
 
 @app.get("/detectB2obj/{postid}")
 def read_item(postid: int, q: Union[str, None] = None):
