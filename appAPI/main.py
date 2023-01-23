@@ -1,4 +1,5 @@
 import os
+import json
 
 from typing import Union
 
@@ -20,5 +21,6 @@ def read_item(postid: int, q: Union[str, None] = None):
     stream = os.popen('python3 ../appB2Detect/callTFB2Model.py /tmp/b2images/' + str(postid) + ".jpg")
     output = stream.read()
 	
+	jsonResponse = json.loads(output)
 
-    return {output}
+    return {jsonResponse}
